@@ -1,1 +1,14 @@
+name: CI/CD StockLite
 
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  verify:
+    name: Verificar proyecto
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Pipeline StockLite activo"
